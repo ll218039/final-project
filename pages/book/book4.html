@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天，我想演我自己</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+
+
+<body>
+    <!--topbar-->
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/097/43/0010974330.jpg&w=187&h=187&v=65607b80">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>今天，我想演我自己</th>
+                </tr>
+                <tr>
+                    <td>作者：鍾欣凌</td>
+                </tr>
+                <tr>
+                    <td>譯者：無</td>
+                </tr>
+                <tr>
+                    <td>出版社：大田</td>
+                </tr>
+                <tr>
+                    <td>售價：350元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <div class="buttons">
+                    <button onclick="showAlert1()">收藏</button>
+                    <button onclick="showAlert()">加入購物車</button>
+                    <a href="../cart/cart.html"><button>直接購買</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            鍾欣凌剛出道時天不怕地不怕，靠著舞台劇的磨練，沒有什麼難得倒她的問題，但因為要訪談來賓沒做功課，馬上踢到鐵板，結果一秒鐘都扯不下去，破綻百出。<br>
+
+            直播時，講錯台詞，明明不是沒有準備，但錯誤還是發生了。<br>
+
+            接到拍零食廣告，廣告商以為反作用方式來打廣告，結果拍完後卻遲遲未播，原因是怕鍾欣凌的身材會讓觀眾誤會是吃了會胖的零食。<br>
+
+            演出《雨後驕陽》小甜甜的中年角色，結果網路一片負評：浮誇、好難看……以為自己是好演員，難道十幾年的磨練難道都白費了？<br>
+
+            鍾欣凌在獲得54屆金鐘獎女主角獎時說：<br>
+
+            我是諧星，我會演戲。<br>
+
+            這句感言不但贏得台下熱烈掌聲，也為自己的演藝工作做了「幽默與轉念」的註解。<br>
+
+            她說：「一直以來，身為諧星很習慣用幽默化解情緒，看事情的角度不要太鑽牛角尖，負面情緒就降低了。」<br>
+
+            「就像小時候被講大摳呆會很受傷，好像整個世界只剩下這件事，但長大後發現沒什麼大不了，攤開自己的缺點、調侃自己，別人就不會繼續在這個點上作文章。」<br>
+
+            在角色中遊走，點點滴滴呷苦當呷補，鍾欣凌領悟死要面子，只是鳥事。她慢慢找到幽默是自己情緒的停損點，轉念是壓力解鎖良藥。如果逗人笑是最舒服的表達方式，那麼天生我材必有用。<br>
+
+            她從諧星出發，當演員的日子，懂得自嘲、放下包袱、抓準節奏……<br>
+            當女兒的日子，來不及問爸爸，為什麼那天下午要送好吃的點心來學校？<br>
+            當媽媽的日子，見招拆招，兔寶和二寶是幽默版鍾欣凌2.0，是愛的寶藏……<br>
+            幽默讓人轉念，思考更多層面，不是練肖話、插科打諢而已。幽默讓人從挫敗的絕境中，找到一條出路。<br>
+            人生這齣戲，不管酸甜苦辣，就是要百分百努力揮灑，有哭有笑才精采。<br>
+
+            編輯告白｜【那些組成自己的時刻】<br>
+            在觀眾眼中，演員鍾欣凌是怎麼樣的人？她是妙語如珠的金鐘獎主持人；是帶來歡聲笑語的快樂粉紅豬；是最討人喜愛，怎麼那麼可愛的婆婆。出道二十多年來，鍾欣凌靈活遊走於螢幕與舞台間，扮演各式讓人印象深刻的角色，成為無數大人與孩子的快樂泉源，戲服與面具脫了又穿、換了又換。<br>
+
+            然而，鏡頭與聚光燈外的她，又是如何扮演「鍾欣凌」？那些豐沛而充滿感染力的情緒與感受，是從何而來？今天，鍾欣凌只想演自己，帶來螢幕後與舞台下，令人感動又爆笑的生命故事。 第一章節〈挫敗是養分〉，大方揭露那些跌一跤的故事：因為體重問題，拍好的零食廣告無法播出；直播節目忘詞，導致現場流程錯亂；舞台上因為滿身大汗，道具幸運草黏在腋下，四葉變三葉……，這些狼狽不堪的時刻，鍾欣凌透過幽默轉化，讓它們搭成一階一階往上走的樓梯。<br>
+
+            第二章節〈塑造我〉，是從爸爸的小公主，成為兩個寶貝女兒的媽媽，一路走來成長的過程。來不及問爸爸，為什麼有天下午，突然帶點心來學校？放學後，在公車上看見疲憊孤獨的爸爸，突然不敢相認，怕打擾爸爸作為自己的時刻。一直到當了媽媽以後，自己也開始無比珍惜工作或獨自旅行，那些可以只做自己的片刻。<br>
+
+            正如第三章節：〈生命是累積〉，鍾欣凌善於轉念，從低潮中總能提取出人生智慧；在逆境中也能苦中作樂。逗人笑比讓人哭更難；做自己比演別人更難，但如果擁有幽默以待的能力，面對困難與挫折，終將破繭而出，化蛹為蝶。onal and close to my heart. I grew up listening to stories about her time living through the war. I’m honored to keep her story alive.”—Millie Bobby Brown
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+    </script>
+</body>
+</html>

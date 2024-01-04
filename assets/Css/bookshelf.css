@@ -1,0 +1,192 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 微軟正黑體, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #bdbbb0;
+}
+
+footer {
+    position: relative;
+    font-size: 10pt;
+    background-color: #362c28;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.topbar {
+    background-color: #8a897c;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 32px;
+}
+
+#logo img {
+    width: 45px;
+    padding: 5px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    transition: background 0.5s;
+}
+
+#logo img:hover {
+    background-color: #c7b88a;
+}
+
+.wheresbook {
+    font-weight: bold;
+    font-size: 14pt;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    letter-spacing: 2px;
+}
+
+.wheresbook a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: background 0.5s;
+}
+
+.wheresbook a:hover {
+    background-color: #c7b88a;
+}
+
+.classify {
+    font-weight: bold;
+    font-size: 12pt;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    letter-spacing: 2px;
+}
+
+.classify a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: background 0.5s;
+}
+
+.classify a:hover {
+    background-color: #c7b88a;
+
+}
+
+/*搜尋*/
+.search {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: -18%;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    width: 30%;
+}
+
+#search button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*topbar 右邊*/
+.iconlinks {
+    display: flex;
+    align-items: center;
+}
+
+.iconlinks img {
+    transition: background 0.5s;
+}
+
+.iconlinks img:hover {
+    background-color: #c7b88a;
+}
+
+.iconlinks img {
+    width: 40px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    margin-top: 6px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    transition: background 0.5s;
+
+}
+
+.links a:hover {
+    background-color: #c7b88a;
+}
+
+.title{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.book{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+
+.book_table{
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 14pt;
+    padding:10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.book img{
+   width: 185px;
+   height: auto;
+   padding-right: 20px;
+   padding-left: 20px;
+   transition: filter 0.3s;
+}
+
+.book img:hover{
+    filter:brightness(125%);
+}

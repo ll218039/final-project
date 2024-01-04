@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書在哪網路書店</title>
+    <link rel="stylesheet" href="../../assets/Css/member modify.css">
+</head>
+<body>
+    <!--上方選單列-->
+    <div class="topbar">
+      <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+      <div class="wheresbook"><a href="#logo">書在哪</a></div>
+      <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+      <div class="search" id="search">
+        <input type="text" placeholder="搜尋...">
+        <button type="button">搜尋</button>
+      </div>
+      <div class="iconlinks">
+          <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+          <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+      </div>
+      <div class="links">
+          <a href="../bookshelf/bookshelf.html">我的書架</a>
+          <a href="../order/order.html">我的訂單</a>
+          <a href="../contact/contact.html">聯繫我們</a>
+      </div>
+    </div>
+  
+    <div class="title">修改會員資料</div>
+      <img class="head" src="../../assets/Images/person.png">
+      <table class="membertable">
+        <tr>
+          <td class="tabletd">姓&ensp;&ensp;名：</td>
+          <td><input type="text" name="" id="user_name" maxlength="6" placeholder="修改您的姓名" ></td>
+          
+        </tr>
+        <tr>
+          <td class="tabletd">手機號碼：</td>
+          <td><input type="tel" id="user_phone" name="user_phone" pattern="[0-9]{1,10}" placeholder="修改10位數的手機號碼" required oninput="validatePhoneNumber(this)"></td>
+        </tr>
+        <tr>
+          <td class="tabletd">電子信箱：</td>
+          <td><input type="text" name="" id="user_email" placeholder="修改您的電子信箱"></td>
+        </tr>
+        <tr>
+          <td class="tabletd">密&ensp;&ensp;碼：</td>
+          <td><a href="password.html"><button>修改密碼</button></a></td>
+        </tr>
+        <tr>
+          <td class="tabletd">生&ensp;&ensp;日：</td>
+          <td><input type="date" name="birthday" id="birthday" placeholder="修改您的生日"></td>
+        </tr>
+        <tr>
+          <td class="tabletd">會員等級：</td>
+          <td>銀牌級</td>
+        </tr>
+      </table>
+      <div class="btn">
+        <a href="member.html"><button>儲存</button></a>
+        <a href="member.html"><button>取消</button></a>
+        
+      </div>
+  <footer>
+    <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+  </footer>
+  <script>
+    function validatePhoneNumber(input) {//限制手機號碼只能輸入10個數字
+      // 將值轉換為字串，以獲取長度
+      var inputValue = input.value.toString();
+      
+      // 檢查輸入的字符數是否超過10
+      if (inputValue.length > 10) {
+        // 超過的話，截斷為指定的最大長度
+        input.value = inputValue.slice(0, 10);
+      }
+    }
+  </script>
+</body>
+</body>
+</html>

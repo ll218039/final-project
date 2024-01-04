@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/Css/sign up.css">
+    <title>會員註冊</title>
+</head>
+<body>
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+          <input type="text" placeholder="搜尋...">
+          <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+      </div>
+
+    <div class="login">
+        <form class="form" method="POST" action="add_member.jsp">
+            <h2>會員註冊 </h2>
+            <div class="group">
+                <label for="user_id">姓名</label>
+                    <input type="text" name="user_name" maxlength="6" placeholder="請輸入您的姓名" >
+            </div>
+            <div class="group">
+                <label for="user_id">手機號碼</label>
+                <input type="tel" name="user_phone" pattern="[0-9]{1,10}" placeholder="請輸入10位數的手機號碼" required oninput="validatePhoneNumber(this)">
+            <div class="group">
+                <label for="user_id">電子信箱（Email）</label>
+                    <input type="text" name="user_email" placeholder="請輸入您的電子信箱">
+            </div>
+            <div class="group">
+                <label for="user_id">會員帳號</label>
+                    <input type="text" name="user_id" maxlength="10" placeholder="請輸入您的帳號">
+            </div>
+            <div class="group">
+                <label for="user_password">會員密碼</label>
+                <input type="password" name="user_password" maxlength="16" placeholder="請輸入您的密碼">
+            </div>
+            <div class="group">
+                <label for="user_password">密碼確認</label>
+                <input type="password" name="user_password_confirm" maxlength="16" placeholder="再次確認您的密碼">
+            </div>
+            <div class="btn-group">
+				<a href="../../assets/Jsp/add_member.jsp" onclick="showAlert()">
+				<input type="submit" class="btn" value="送出">
+				</a> 
+            </div>
+        </form>
+    </div>
+    <script>
+        function validatePhoneNumber(input) {
+          // 將值轉換為字串，以獲取長度
+          var inputValue = input.value.toString();
+          
+          // 檢查輸入的字符數是否超過10
+          if (inputValue.length > 10) {
+            // 超過的話，截斷為指定的最大長度
+            input.value = inputValue.slice(0, 10);
+          }
+        }
+        function showAlert() {
+            alert("註冊成功!");
+            }
+      </script>
+
+
+</body>
+</html>

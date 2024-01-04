@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>縫隙</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+
+
+<body>
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/095/18/0010951845.jpg&v=6405c14bk&w=348&h=348">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>縫隙</th>
+                </tr>
+                
+                <tr>
+                    <td>作者：逢時</td>
+                </tr>
+                <tr>
+                    <td>譯者：無</td>
+                </tr>
+                <tr>
+                    <td>出版社：台灣角川</td>
+                </tr>
+                <tr>
+                    <td>售價：300元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button onclick="showAlert1()">收藏</button>
+                <button onclick="showAlert()">加入購物車</button>
+                <a href="../cart/cart.html"><button>直接購買</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            知名編劇作家逢時，大膽融合母愛與邪教命題，打造《咒》後本土全新恐怖殿堂級狂潮！<br>
+            蘇方琪決心潛入道場，她想知道這個新興宗教來自何方？又為什麼會有這麼多信徒的子女喪生？這是意外巧合，還是被稱作「向老師」的教主向安婕，操縱鬼神，蓄意為之……？
+
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+    </script>
+</body>
+</html>

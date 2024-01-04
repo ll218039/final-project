@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潛水：深海的記憶</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+
+
+<body>
+    <!--topbar-->
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/096/88/0010968839.jpg&v=65097918k&w=348&h=348">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>潛水：深海的記憶</th>
+                </tr>
+                <tr>
+                    <td>作者：丹陽</td>
+                </tr>
+                <tr>
+                    <td>譯者：莫莉</td>
+                </tr>
+                <tr>
+                    <td>出版社：大樹林</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>售價：350元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button onclick="showAlert1()">收藏</button>
+                <button onclick="showAlert()">加入購物車</button>
+                <a href="../cart/cart.html"><button>直接購買</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            《潛水》故事背景設定在「被大水淹沒的2057年首爾」，<br>
+            少女宣率在首爾海底的廢墟裡找到有人類外貌的機器人。<br>
+            覺醒的機器人叫做秀皓，她原本是人類，卻在死前接受腦部掃描，重生為機器人。<br>
+            機器人秀皓彷彿是忘記喝下孟婆湯的亡者，記得過去的一切。<br>
+            秀皓發現自己缺少四年記憶後，開始思考……<br>
+            ──父母為何把她丟在那裡？是因為真正的秀皓康復了，所以不再需要她？<br>
+            ──還是在那四年裡，真正的秀皓離世，所以製造了她，但為何不植入2038年之後的記憶呢？<br>
+            ──還是父母製造了機器人，才發現無法取代女兒？<br>
+            秀皓開始思考自己到底是人，還是機器？以及她為何而活？<br>
+             
+            最終，宣率明白自己從塑膠櫃裡拿出來的不是戰利品，也不是完好無缺的機器人，而是「尚未到來的過去」。宣率將陪秀皓一起潛入深海，解開這個埋藏的過去，這將為她們帶來何種衝擊呢？
+             
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+    </script>
+</body>
+</html>

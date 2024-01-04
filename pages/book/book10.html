@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚安是你，明天的早安也要是你：青與棉木先生共度的100種幸福日常</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+
+
+<body>
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/097/40/0010974053.jpg&v=6555fd3ak&w=348&h=348">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>晚安是你，明天的早安也要是你</th>
+                </tr>
+                
+                <tr>
+                    <td>作者：青（@163______________）</td>
+                </tr>
+                <tr>
+                    <td>譯者：無</td>
+                </tr>
+                <tr>
+                    <td>出版社：台灣東販</td>
+                </tr>
+                <tr>
+                    <td>售價：380元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button onclick="showAlert1()">收藏</button>
+                <button onclick="showAlert()">加入購物車</button>
+                <a href="../cart/cart.html"><button>直接購買</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            我的初戀是棉木先生，他在我十七歲的時候出現。<br>
+        在那之前，我是一個很孤單的人，我總是一個人，而且感覺被世界拋棄，我不相信朋友、不相信愛情，我覺得世界是冷冰的。<br>
+        棉木先生是我生命中很大的禮物。<br>
+        他走進我的生活，擁抱我的悲傷、擦乾我的眼淚，<br>
+        也是從那時候開始，我懂得示弱、懂得打開自己的心。
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+    </script>
+</body>
+</html>

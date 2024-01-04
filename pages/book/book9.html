@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皮拉奈奇</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+
+
+<body>
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/096/84/0010968444.jpg&v=6502e0e7k&w=348&h=348">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>皮拉奈奇</th>
+                </tr>
+                
+                <tr>
+                    <td>作者：蘇珊娜‧克拉克</td>
+                </tr>
+                <tr>
+                    <td>譯者：穆卓芸</td>
+                </tr>
+                <tr>
+                    <td>出版社：時報出版</td>
+                </tr>
+                <tr>
+                    <td>售價：400元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button onclick="showAlert1()">收藏</button>
+                <button onclick="showAlert()">加入購物車</button>
+                <a href="../cart/cart.html"><button>直接購買</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            「皮拉奈奇」這個名字靈感源自於十八世紀的義大利藝術家皮拉奈奇（Giovanni Battista Piranesi），以版畫作品舉世聞名。這是一本關於失去和尋找自我的奇幻之書，它寫出人類在追求智慧的過程中可能失去寶貴的東西。當年《英倫魔法師》出版後一鳴驚人，作者卻意外罹患慢性疾病，長期居家療養。創作這本書的過程中，克拉克意識到自己和筆下的主人翁一樣成了與世隔絕的人。作者創造出一個美輪美奐的迷宮。筆調潔淨，激發哲學思考，深刻探索身為人的意義，全書超越你我的想像，只要相信幻想世界存在，你就能夠進入。
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+    </script>
+</body>
+</html>
