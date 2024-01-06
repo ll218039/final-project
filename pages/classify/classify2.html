@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書在哪網路書店</title>
+</head>
+<link rel="stylesheet" href="../../assets/Css/classify.css">
+<body>
+    <!--topbar-->
+   <div class="topbar">
+    <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+    <div class="wheresbook"><a href="#logo">書在哪</a></div>
+    <div class="classify"><a href="../classify/classify.jsp">書籍分類</a></div>
+    <div class="search" id="search">
+      <input type="text" placeholder="搜尋...">
+      <button type="button">搜尋</button>
+    </div>
+    <div class="iconlinks">
+        <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        
+    </div>
+    <div class="dropdown">
+        <span>會員資訊</span>
+        <div class="dropdown-content">
+            <!-- 下拉式選單內容 -->
+            <a href="../member/sign in.html">會員登入</a>
+            <a href="../member/sign up.html">會員註冊</a>
+            <a href="../member/member.html">會員資料</a>
+            <a href="../index.html">會員登出</a>
+        </div>
+    </div>
+    <div class="links">
+        <a href="../bookshelf/bookshelf.html">我的書架</a>
+        <a href="../order/order.html">我的訂單</a>
+        <a href="../contact/contact.html">聯繫我們</a>
+    </div>
+</div>
+
+    <div class="title">書籍分類</div>
+    <div id="classifyselector">
+        選擇分類：
+        <select id="category" onchange="filterBooks()">
+            <option value="classify2.html">科幻小說</option>
+            <option value="classify1.html">文學小說</option>
+            <option value="classify.html">心理勵志</option>
+            <option value="classify3.html">愛情小說</option>
+            <option value="classify4.html">懸疑推理</option>
+            <!-- 添加其他分類選項 -->
+        </select>
+    </div>
+    
+    <div class="book">
+       
+        <table class="book_table">
+            <tr class="book_title">
+                <td colspan="6"><a href="">科幻小說</a></td>
+            </tr>
+            <tr>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href="../book/book2.html"><img src="../../assets/Images/book_img/booktest2.jpg"></a></td>
+                <td><a href="../book/book3.html"><img src="../../assets/Images/book_img/booktest3.png"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                <td><a href=""><img src="../../assets/Images/book_img/booktest1.jpg"></a></td>
+                </tr>
+            <tr>
+                <td>被討厭的勇氣</td>
+                <td>異鄉人 </td>
+                <td>nineteen steps </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+                <td>書籍名稱 </td>
+            </tr>
+            <tr>
+                <td>古賀史健， 岸見一郎</td>
+                <td>卡繆&nbsp;Albert Camus</td>
+                <td>Millie Bobby Brown</td>
+                <td>作者</td>
+                <td>作者</td>
+                <td>作者</td>
+                <td>作者</td>
+                <td>作者</td>
+                <td>作者</td>
+                <td>作者</td>
+            </tr>
+        </table>
+    </div>
+  
+
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Set the initial scroll position to the left
+        document.getElementById('tableWrapper').scrollLeft = 0;
+        function filterBooks() {
+            // 獲取選擇的值
+            var selectedCategory = document.getElementById("category").value;
+    
+            // 跳轉到選中的分頁
+            window.location.href = selectedCategory;
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巴別塔學院</title>
+    <link rel="stylesheet" href="../../assets/Css/book.css">
+</head>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+<body>
+    <div class="topbar">
+        <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+            <input type="text" placeholder="搜尋...">
+            <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="../member/sign in.html"><img src="../../assets/Images/membericon.png"></a>
+            <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        </div>
+        <div class="links">
+            <a href="../bookshelf/bookshelf.html">我的書架</a>
+            <a href="../order/order.html">我的訂單</a>
+            <a href="../contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+    <div class="book">
+        <div class="bookimg">
+            <img  src ="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/096/25/0010962566.jpg&v=64b8b95dk&w=348&h=348">
+        </div>
+        <div class="imformation">
+            <table class="booktable">
+                <tr>
+                    <th>巴別塔學院</th>
+                </tr>
+                
+                <tr>
+                    <td>作者：匡靈秀</td>
+                </tr>
+                <tr>
+                    <td>譯者：楊睿珊, 楊詠翔</td>
+                </tr>
+                <tr>
+                    <td>出版社：臉譜</td>
+                </tr>
+                <tr>
+                    <td>售價：599元</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <div class="quantity-container">
+                            <div class="quantity-btn" onclick="decreaseQuantity()">&lt;</div>
+                            <div class="quantity-number"><input type="text" id="quantity" value="1" readonly></div>
+                            <div class="quantity-btn" onclick="increaseQuantity()">&gt;</div>
+                          </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button onclick="showAlert1()">收藏</button>
+                <button onclick="showAlert()">加入購物車</button>
+                <a href="../cart/cart.html"><button>直接購買</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>內容簡介</h2>
+        <p>
+            帝國獨霸世界，但支持它發展的魔力是從各地蒐羅的「語言」，<br>
+            以巴別塔為名的翻譯學院，就是帝國的魔法核心。<br>
+
+            代表各自的母語和母國而來的學生們，<br>
+            有人心悅誠服將自己的語言獻給帝國，<br>
+            也有人暗中等待高塔倒下的那一天……<br>
+
+
+            十九世紀的廣東沿海通商口岸，全家人死於瘟疫的十一歲孤兒羅賓奄奄一息，被一位自稱勒維教授的英國男子所救，登上了航向倫敦的客船。<br>
+
+            勒維教授服務於牛津大學內專研翻譯的「巴別塔學院」，但此地進行的研究和教學不僅是關於不同語言間的轉換──擁有多語能力又受過特殊培訓的「譯者」，將兩種語言的兩個相對應詞彙銘刻於銀條之上時，能同時鎖入翻譯過程中漏失的細微誤差概念，並藉由銀條施展這組詞彙概念代表的魔法。英國藉此壯大科技與軍事實力，向外征服更多語言不同的殖民地之後，又吸收了更多「譯者」來到學院、創造出更多不同的魔法來應用，由此生生不息。<br>
+
+            被帶往英國的羅賓成為巴別塔學院的譯者學生，他醉心於翻譯魔法的奧妙，卻也困擾於英國本地同學對他的輕蔑與敵意。意外捲入一樁銀條竊案之後，他發現學院歷年來不斷有學生神祕失蹤或突然身故，他們曾加入的地下組織「赫密士會」，如今也透過一名與他容貌酷似的陌生青年對他遞出邀請。「赫密士會」意欲打破英國政府對翻譯魔法的壟斷，將之普及於所有階級、所有國家，但他們的理想會讓學院付出什麼樣的代價？不斷往返於東西方之間運籌帷幄的勒維教授，又將如何再次介入羅賓的命運？<br>
+
+            隨著中英兩國的衝突在羅賓的故鄉釀成戰火，一場撼動巴別塔的叛亂也一觸即發。羅賓與巴別塔學院的譯者師生會在戰爭中繼續扮演帝國的精銳武器，或是改寫歷史的軌跡……？
+             
+        </p>
+    </div>
+    <div id="comment-section" class="content">
+        <h2>商品評論區</h2>
+        <table class="comment_table">
+            <tr>
+                <td>
+                    <div class="text">jimlai0423(我)</div>
+                    <div class="star" id="star-rating">
+                    <!-- 找到所有的icon，並設立一個data-index，用來判斷點擊的是哪一個星星 -->
+                    <iconify-icon
+                      icon="material-symbols:star-outline"
+                      width="40"
+                      data-index="1"
+                      class="star-icon"></iconify-icon>
+                    <iconify-icon
+                      icon="material-symbols:star-outline"
+                      class="star-icon"
+                      data-index="2"
+                      width="40"></iconify-icon>
+                    <iconify-icon
+                      icon="material-symbols:star-outline"
+                      class="star-icon"
+                      data-index="3"
+                      width="40"></iconify-icon>
+                    <iconify-icon
+                      icon="material-symbols:star-outline"
+                      class="star-icon"
+                      data-index="4"
+                      width="40"></iconify-icon>
+                    <iconify-icon
+                      icon="material-symbols:star-outline"
+                      class="star-icon"
+                      data-index="5"
+                      width="40"></iconify-icon>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td><form id="comment-form">
+                    <label><textarea cols="25" rows="10" wrap="hard" maxlength="150"></textarea></label>
+                    <button type="button" onclick="addComment()">發表評論</button>
+                </form></td>
+            </tr>
+        </table>
+
+        <table class="comment_table">
+            <tr><td><label name="user" id="user">llll</label></td></tr>
+            <tr><td class="user_comment"><label name="comment" id="comment">讚讚讚讚讚</label></td></tr>
+            <tr><td><label name="user" id="user">danny</label></td></tr>
+            <tr><td class="user_comment"><label name="comment" id="comment">good!</label></td></tr></div>
+        </table>
+        
+    </div>
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          quantityInput.value = currentQuantity + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentQuantity = parseInt(quantityInput.value, 10);
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+
+        function addComment(){
+            alert("發表成功!");
+        }
+
+        function showAlert() {
+            alert("已加入購物車!");
+          }
+          function showAlert1() {
+            alert("已加入書架!");
+          }
+
+          document.addEventListener("DOMContentLoaded", function () {
+            // 找到最外層的div
+            const starRating = document.getElementById("star-rating");
+    
+            // 找到所有的icon
+            const starIcons = starRating.querySelectorAll(".star-icon");
+    
+            // 將所有的icon加上click事件
+            starIcons.forEach((starIcon) => {
+              starIcon.addEventListener("click", function () {
+                // 找到點擊的icon的data-index 並轉成數字
+                const clickedIndex = parseInt(this.getAttribute("data-index"));
+    
+                // starsIcons是一個陣列，所以可以用forEach來判斷 跑迴圈 全部都跑一遍
+                starIcons.forEach((icon, index) => {
+                  // 如果index小於點擊的index，就加上selected的class，並且改變icon
+                  if (index < clickedIndex) {
+                    icon.setAttribute("icon", "material-symbols:star");
+                  }
+                  // 如果index小於點擊的index，就加上selected的class，並且改變icon 變成空心
+                  else {
+                    icon.setAttribute("icon", "material-symbols:star-outline");
+                  }
+                });
+    
+                // 在這裏你可以將 clickedIndex 送到後端，並更新資料庫
+    
+                console.log("Selected Rating: " + clickedIndex);
+              });
+            });
+          });
+      </script>
+</body>
+</html>

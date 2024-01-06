@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書在哪網路書店</title>
+    <link rel="stylesheet" href="../assets/Css/style.css">
+    </head>
+<body>
+    <!--topbar-->
+    <div class="topbar">
+        <a href="index.html" id="logo"><img src="../assets/Images/book.png"></a>
+        <div class="wheresbook"><a href="#logo">書在哪</a></div>
+        <div class="classify"><a href="classify/classify.html">書籍分類</a></div>
+        <div class="search" id="search">
+          <input type="text" placeholder="搜尋...">
+          <button type="button">搜尋</button>
+        </div>
+        <div class="iconlinks">
+            <a href="cart/cart.html"><img src="../assets/Images/carticon.png"></a>
+            
+        </div>
+        <div class="dropdown">
+            <span>會員資訊</span>
+            <div class="dropdown-content">
+                <!-- 下拉式選單內容 -->
+                <a href="member/sign in.html">會員登入</a>
+                <a href="member/member.html">會員資料</a>
+                <a href="index.html">會員登出</a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="bookshelf/bookshelf.html">我的書架</a>
+            <a href="order/order.html">我的訂單</a>
+            <a href="contact/contact.html">聯繫我們</a>
+        </div>
+    </div>
+    
+    <main class="main">
+        
+        <div id="slideshow" class="slideshow">
+            <div class="slide">
+              <img src="../assets/Images/memberlevel.png" alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src="../assets/Images/opening.jpg" alt="Image 2">
+            </div>
+          
+            <button id="prevBtn" onclick="prevSlide()">&lt;</button>
+            <button id="nextBtn" onclick="nextSlide()">&gt;</button>
+          </div>
+
+        <div class="newbook">
+            <table class="newbook_table">
+                <tr class="newbook_title">
+                    <td colspan="6"><a href="">最新上架</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href="book/book2.html"><img src="../assets/Images/book_img/booktest2.jpg"></a></td>
+                    <td><a href="book/book3.html"><img src="../assets/Images/book_img/booktest3.png"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+
+                </tr>
+                <tr>
+                    <td>被討厭的勇氣</td>
+                    <td>異鄉人 </td>
+                    <td>nineteen steps </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                </tr>
+                <tr>
+                    <td>古賀史健， 岸見一郎</td>
+                    <td>卡繆&nbsp;Albert Camus</td>
+                    <td>Millie Bobby Brown</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="recommend">
+            <table class="recommend_table">
+                <tr class="recommend_title">
+                    <td colspan="6"><a href="">推薦書籍</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+
+                </tr>
+                <tr>
+                    <td>書籍名稱</td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="hot">
+            <table class="hot_table">
+                <tr class="hot_title">
+                    <td colspan="6"><a href="">熱門書籍</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+
+                </tr>
+                <tr>
+                    <td>書籍名稱</td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="author">
+            <table class="author_table">
+                <tr class="author_title">
+                    <td colspan="6"><a href="">作者與出版商特集－甚麼小出版社</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                    <td><a href=""><img src="../assets/Images/book_img/booktest1.jpg"></a></td>
+                </tr>
+                <tr>
+                    <td>書籍名稱</td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                    <td>書籍名稱 </td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                    <td>作者</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 書在哪 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+          });
+        }
+      
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+      
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        }
+      
+        function autoNextSlide() {
+          nextSlide();
+        }
+      
+        // 初始顯示第一張圖片
+        showSlide(currentSlide);
+      
+        // 設定每五秒切換到下一張圖片
+        setInterval(autoNextSlide, 4000);
+      </script>
+</body>
+</html>

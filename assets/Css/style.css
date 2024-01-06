@@ -1,0 +1,373 @@
+a{
+    text-decoration: none;
+}
+body {
+    font-family: 微軟正黑體,Arial ;
+    margin: 0;
+    padding: 0;
+    background-color: #bdbbb0;
+}
+/*-----topbar-------*/
+.topbar {
+    background-color: #8a897c;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 32px;
+}
+#logo img{
+    width: 45px;
+    padding: 5px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    transition: background 0.5s;
+}
+#logo img:hover{
+    background-color: #c7b88a;
+}
+.wheresbook{
+    font-weight: bold;
+    font-size: 14pt;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    letter-spacing: 2px;
+}
+.wheresbook a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: background 0.5s;
+}
+.wheresbook a:hover{
+    background-color: #c7b88a;
+}
+.classify{
+    font-weight: bold;
+    font-size: 12pt;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    letter-spacing: 2px;
+}
+.classify a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: background 0.5s;
+}
+.classify a:hover{
+    background-color: #c7b88a;
+
+}
+/*搜尋*/
+.search {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: -18%;
+}
+.search input[type="text"] {
+    padding: 5px;
+    width: 30%;
+}
+#search button {
+    margin-left: 5px; 
+    cursor: pointer;
+}
+/*topbar 右邊*/
+.iconlinks{
+    display: flex;
+    align-items: center;
+}
+.iconlinks img{
+    transition: background 0.5s;
+}
+.iconlinks img:hover{
+    background-color: #c7b88a;
+}
+.iconlinks img{
+    width: 40px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 3px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    transition: background 0.5s;
+
+}
+.links a:hover{
+    background-color: #c7b88a;
+}
+/* 添加樣式以隱藏下拉式選單 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    align-items: center;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    width: 100px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown span{
+    font-weight: bold;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dropdown-content a {
+    display: block; /* 設置為塊級元素，使選項垂直排列 */
+    padding: 10px; /* 可根據需要調整選項的內邊距 */
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    transition: background 0.5s;
+}
+
+.dropdown-content a:hover{
+    background-color: #c7b88a;
+}
+
+/* 添加樣式以顯示下拉式選單 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 添加樣式以設置圖片大小 */
+.dropdown-content a img {
+    width: 20px; /* 設置圖片寬度 */
+    height: 20px; /* 設置圖片高度 */
+    margin-right: 5px; /* 可根據需要調整圖片和文字之間的距離 */
+}
+/*--------topbar 結尾-----------*/
+
+/*活動圖片*/
+.slideshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow img{
+    padding: 20px;
+    padding-top: 30px;
+    width: 700px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #prevBtn {
+    top: 280px;
+    left: 370px;
+    font-size: 20pt;
+    color:white;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  #nextBtn {
+    top:280px;
+    right: 370px;
+    font-size: 20pt;
+    color:white;
+    background-color: transparent;
+    border: transparent;
+  }
+/*最新上架*/
+.newbook{
+   text-align: center;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.newbook_title{
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: left;
+    height: 30px;
+    line-height: 50px;
+    color:black;
+}
+
+.newbook_table{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 12pt;
+    padding:10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.newbook img{
+   width: 130px;
+   height: auto;
+   padding-right: 20px;
+   padding-left: 20px;
+   transition: filter 0.3s;
+}
+
+.newbook img:hover{
+    filter:brightness(125%);
+}
+
+/*---------推薦書籍---------*/
+.recommend{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+ 
+ .recommend_title{
+     font-weight: bold;
+     font-size: 18pt;
+     text-align: left;
+     height: 30px;
+     line-height: 50px;
+     color:black;
+ }
+ 
+ .recommend_table{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 12pt;
+    padding:10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4)
+ }
+ 
+ .recommend img{
+    width: 130px;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: filter 0.3s;
+ }
+ 
+ .recommend img:hover{
+     filter:brightness(125%);
+ }
+ 
+ /*-----熱門書籍--------*/
+ .hot{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+ 
+ .hot_title{
+     font-weight: bold;
+     font-size: 18pt;
+     text-align: left;
+     height: 30px;
+     line-height: 50px;
+     color:black;
+ }
+ 
+ .hot_table{
+     text-align: center;
+     align-items: center;
+     display: flex;
+     font-size: 12pt;
+     padding:10px;
+     border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.4)
+ }
+ 
+ .hot img{
+    width: 130px;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: filter 0.3s;
+ }
+ 
+ .hot img:hover{
+     filter:brightness(125%);
+ }
+
+ /*作者與出版商特集*/
+ .author{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 50px;
+ }
+ 
+ .author_title{
+     font-weight: bold;
+     font-size: 18pt;
+     text-align: left;
+     height: 30px;
+     line-height: 50px;
+     color:black;
+ }
+ 
+ .author_table{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 12pt;
+    padding:10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+ 
+ .author img{
+    width: 130px;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: filter 0.3s;
+ }
+ 
+ .author img:hover{
+     filter:brightness(125%);
+ }
+ 
+
+footer {
+    font-size: 10pt;
+    background-color: #362c28;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    bottom: 0;
+    width: 100%;
+ }
+

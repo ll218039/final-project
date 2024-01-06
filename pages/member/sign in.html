@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書在哪網路書店</title>
+    <link rel="stylesheet" href="../../assets/Css/sign in.css">
+</head>
+<body>
+   <!--topbar-->
+   <div class="topbar">
+    <a href="../index.html" id="logo"><img src="../../assets/Images/book.png"></a>
+    <div class="wheresbook"><a href="#logo">書在哪</a></div>
+    <div class="classify"><a href="../classify/classify.html">書籍分類</a></div>
+    <div class="search" id="search">
+      <input type="text" placeholder="搜尋...">
+      <button type="button">搜尋</button>
+    </div>
+    <div class="iconlinks">
+        <a href="../cart/cart.html"><img src="../../assets/Images/carticon.png"></a>
+        
+    </div>
+    <div class="dropdown">
+        <span>會員資訊</span>
+        <div class="dropdown-content">
+            <!-- 下拉式選單內容 -->
+            <a href="../member/sign in.html">會員登入</a>
+            <a href="../member/sign up.html">會員註冊</a>
+            <a href="../member/member.html">會員資料</a>
+            <a href="../index.html">會員登出</a>
+        </div>
+    </div>
+    <div class="links">
+        <a href="../bookshelf/bookshelf.html">我的書架</a>
+        <a href="../order/order.html">我的訂單</a>
+        <a href="../contact/contact.html">聯繫我們</a>
+    </div>
+</div>
+
+    <div class="login">
+        <form class="form" action="../../assets/Jsp/check.jsp" method="POST">
+            <h2>會員登入 </h2>
+            <div class="group">
+                <label for="user_id">帳號</label>
+                    <input type="text" name="user_id" maxlength="10" placeholder="請輸入您的帳號">
+            </div>
+            <div class="group">
+                <label for="user_password">密碼</label>
+                <input type="password" name="user_password" maxlength="16" placeholder="請輸入您的密碼">
+            </div>
+            <div class="btn-group">
+				<input type="submit" value="登入" class="btn" onclick="showAlert()">
+                <a href="sign up.html"><button class="btn">註冊</button></a>
+            </div>
+        </form>
+    </div>
+    <script>
+        function showAlert() {
+          alert("登入成功!");
+        }
+      </script>
+      
+    
+</body>
+</html>
